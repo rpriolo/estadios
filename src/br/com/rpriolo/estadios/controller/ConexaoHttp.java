@@ -23,22 +23,7 @@ public class ConexaoHttp {
         return response;
     }
 
-    public String buscarTodosOsEstadios() {
-        HttpResponse<String> response = montarConexao(this.url);
-        return response.body();
-    }
-
-    public String buscarEstadiosPorNome(String nome) {
-        String nomeUrl = nome.replace(' ', '+');
-        String novaUrl = this.url + "?nome=" + nomeUrl;
-        HttpResponse<String> response = montarConexao(novaUrl);
-        return response.body();
-    }
-
-    public String buscarEstadiosPorTime(String time) {
-        String timeUrl = time.replace(' ', '+');
-        String novaUrl = this.url + "?time=" + timeUrl;
-        HttpResponse<String> response = montarConexao(novaUrl);
-        return response.body();
+    public String getUrl() {
+        return url;
     }
 }
