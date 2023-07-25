@@ -1,5 +1,8 @@
 package br.com.rpriolo.estadios.model;
 
+import java.text.NumberFormat;
+import java.util.Locale;
+
 public class Estadio {
     private String nome;
     private String time;
@@ -11,6 +14,16 @@ public class Estadio {
         this.time = time;
         this.capacidade = capacidade;
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        NumberFormat format = NumberFormat.getInstance(new Locale("pt", "BR"));
+        String capacidadeFormat = format.format(capacidade);
+        return  "Nome: " + nome + "\n" +
+                "Time: " + time + "\n" +
+                "Capacidade: " + capacidadeFormat + "\n" +
+                "ID: " + id;
     }
 
     public String getNome() {
