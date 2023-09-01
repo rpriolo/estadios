@@ -1,5 +1,5 @@
 # Estádios API
-![Status: Completed](https://img.shields.io/static/v1?label=STATUS&message=UNDER%20DEVELOPMENT&color=f2eb72&style=for-the-badge)
+![Status: Completed](https://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=f2eb72&style=for-the-badge)
 
 Este projeto visa demonstrar o consumo via Java de uma API REST criada no mockAPI.
 
